@@ -12,7 +12,7 @@ class ExampleThread(Thread):
         self.socket.bind("tcp://127.0.0.1:5555")
 
     def prompt_ai(self, text, stop=None):
-                openai.api_key = "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"
+                openai.api_key = "OPEN-API-KEY"
                 response = openai.Completion.create(
                     engine="text-davinci-002",
                     prompt=text,
